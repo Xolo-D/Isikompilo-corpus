@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Browse - UsikoMpilo Corpus</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Top Navigation -->
+  <header class="top-nav" role="banner">
+    <div class="nav-inner">
+      <a href="index.html" class="logo" id="nav-home">UsikoMpilo Corpus</a>
+      <nav class="primary-nav" aria-label="Primary navigation" id="primaryNav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="search.html" class="nav-link">Search</a>
+        <a href="browse.html" class="nav-link active">Browse</a>
+        <a href="analysis.html" class="nav-link">Statistics</a>
+        <a href="admin.html" class="nav-link">Admin</a>
+      </nav>
+      <div class="nav-right">
+        <button id="openSearchBtn" aria-label="Open quick search">🔎</button>
+        <a href="#" id="loginBtn" class="muted-2">Login</a>
+      </div>
+      <button class="hamburger" aria-label="Toggle navigation" id="hamburger">☰</button>
+    </div>
+  </header>
+
+  <!-- Main content -->
+  <main id="main" class="container" role="main" tabindex="-1">
+    <section class="browse-page">
+      <h2>Browse Corpus Content</h2>
+      <div class="browse-categories">
+        <div class="browse-card">
+          <h3>Proverbs</h3>
+          <p>Explore traditional isiZulu proverbs and their meanings</p>
+          <button class="browse-button" data-category="proverbs">Browse Proverbs</button>
+        </div>
+        <div class="browse-card">
+          <h3>Idioms</h3>
+          <p>Discover isiZulu idioms and expressions</p>
+          <button class="browse-button" data-category="idioms">Browse Idioms</button>
+        </div>
+        <div class="browse-card">
+          <h3>Songs</h3>
+          <p>Traditional and contemporary isiZulu songs</p>
+          <button class="browse-button" data-category="songs">Browse Songs</button>
+        </div>
+        <div class="browse-card">
+          <h3>Narratives</h3>
+          <p>Stories and historical narratives</p>
+          <button class="browse-button" data-category="narratives">Browse Narratives</button>
+        </div>
+      </div>
+      <div class="browse-content" id="browseContent">
+        <p>Select a category to browse content</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <small>© 2025 CORPUS — isiZulu Cultural Corpus</small>
+    </div>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>

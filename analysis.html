@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Statistics - UsikoMpilo Corpus</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Top Navigation -->
+  <header class="top-nav" role="banner">
+    <div class="nav-inner">
+      <a href="index.html" class="logo" id="nav-home">UsikoMpilo Corpus</a>
+      <nav class="primary-nav" aria-label="Primary navigation" id="primaryNav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="search.html" class="nav-link">Search</a>
+        <a href="browse.html" class="nav-link">Browse</a>
+        <a href="analysis.html" class="nav-link active">Statistics</a>
+        <a href="admin.html" class="nav-link">Admin</a>
+      </nav>
+      <div class="nav-right">
+        <button id="openSearchBtn" aria-label="Open quick search">🔎</button>
+        <a href="#" id="loginBtn" class="muted-2">Login</a>
+      </div>
+      <button class="hamburger" aria-label="Toggle navigation" id="hamburger">☰</button>
+    </div>
+  </header>
+
+  <!-- Main content -->
+  <main id="main" class="container" role="main" tabindex="-1">
+    <section class="analysis-page">
+      <h2>Corpus Statistics & Analysis</h2>
+      <div class="stats-overview">
+        <div class="stat">
+          <h3>Total Words</h3>
+          <p class="stat-number">24,589</p>
+        </div>
+        <div class="stat">
+          <h3>Unique Words</h3>
+          <p class="stat-number">14,872</p>
+        </div>
+        <div class="stat">
+          <h3>Word Types</h3>
+          <p class="stat-number">8</p>
+        </div>
+        <div class="stat">
+          <h3>Avg. Word Length</h3>
+          <p class="stat-number">7.2</p>
+        </div>
+      </div>
+      <div class="charts-container">
+        <div class="chart-card">
+          <h3>Word Frequency Distribution</h3>
+          <canvas id="wordFrequencyChart" role="img" aria-label="Bar chart showing word frequencies: Ubuntu 156, Indlela 87, etc." tabindex="0"></canvas>
+        </div>
+        <div class="chart-card">
+          <h3>Parts of Speech</h3>
+          <canvas id="posChart" role="img" aria-label="Doughnut chart of parts of speech: Nouns 35%, Verbs 25%, etc." tabindex="0"></canvas>
+        </div>
+        <div class="chart-card">
+          <h3>Word Usage Over Time</h3>
+          <canvas id="usageOverTimeChart" role="img" aria-label="Line chart of corpus growth from 2018 to 2023." tabindex="0"></canvas>
+        </div>
+        <div class="chart-card">
+          <h3>Top Collocations</h3>
+          <canvas id="collocationsChart" role="img" aria-label="Horizontal bar chart of top collocations and their frequencies." tabindex="0"></canvas>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <small>© 2025 CORPUS — isiZulu Cultural Corpus</small>
+    </div>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
